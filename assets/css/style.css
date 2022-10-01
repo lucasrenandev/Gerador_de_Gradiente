@@ -38,10 +38,12 @@ main .colors {
 }
 
 main .colors input {
+    appearance: none;
     width: 80px;
     height: 45px;
     border: none;
     margin: 0 10px;
+    cursor: pointer;
 }
 
 main .directions {
