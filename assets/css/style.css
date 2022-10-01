@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top right, #94ff9b 20%, #234dcd 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: #F7F7F7;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+main h3 {
+    color: #616161;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+main .colors {
+    text-align: center;
+}
+
+main .colors input {
+    width: 80px;
+    height: 45px;
+    border: none;
+    margin: 0 10px;
+}
+
+main .directions {
+    text-align: center;
+}
+
+main .directions > i {
+    font-size: 2em;
+    font-weight: 500;
+    color: #aaa;
+    cursor: pointer;
+}
+
+main .directions > i.active {
+    color: #000;
+}
+
+main .buttonGenerate, .buttonCopy {
+    height: 45px;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+main .buttonGenerate {
+    background-color: #2C73D2;
+    transition: background-color .3s;
+}
+
+main .buttonGenerate:hover {
+    background-color: #215292;
+}
+
+main .buttonCopy {
+    background-color: #198b19;
+    transition: background-color .3s;
+}
+
+main .buttonCopy:hover {
+    background-color: #126812;
+}
+
+main textarea {
+    height: 200px;
+    resize: none;
+    border: none;
+    padding: 10px 6px;
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: 5px;
+}
