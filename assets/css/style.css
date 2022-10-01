@@ -56,7 +56,7 @@ main .directions > i {
 }
 
 main .directions > i.active {
-    color: #000;
+    color: #000 !important;
 }
 
 main .buttonGenerate, .buttonCopy {
@@ -71,7 +71,7 @@ main .buttonGenerate, .buttonCopy {
 
 main .buttonGenerate {
     background-color: #2C73D2;
-    transition: background-color .3s;
+    transition: background-color .3s ease;
 }
 
 main .buttonGenerate:hover {
@@ -80,7 +80,7 @@ main .buttonGenerate:hover {
 
 main .buttonCopy {
     background-color: #198b19;
-    transition: background-color .3s;
+    transition: background-color .3s ease;
 }
 
 main .buttonCopy:hover {
@@ -90,7 +90,7 @@ main .buttonCopy:hover {
 main textarea {
     height: 200px;
     resize: none;
-    border: none;
+    border: 1px solid #eee;
     padding: 10px 6px;
     font-size: 1em;
     font-weight: 400;
