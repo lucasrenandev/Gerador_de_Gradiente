@@ -1,3 +1,4 @@
+// Elementos
 const directions = document.querySelectorAll(".directions i")
 const firsColor = document.querySelector("#firstColor")
 const secondColor = document.querySelector("#secondColor")
@@ -17,17 +18,15 @@ directions.forEach(item => {
     }
 })
 
-// Gerando gradiente
-buttonGenerate.onclick = () => {
+// Função parar gerar gradiente
+function generateGradient() {
     gradient = `linear-gradient(${direction}, ${firsColor.value}, ${secondColor.value})`
-
     document.body.style.backgroundImage = gradient
     output.value = gradient
 }
 
-// Copiando código gradiente
-buttonCopy.onclick = () => {
-
+// Função para copiar código gradiente
+function copyCode() {
     if(!output.value || output.value !== gradient) {
         window.alert("Gere um gradiente para continuar!")
     }
@@ -35,5 +34,7 @@ buttonCopy.onclick = () => {
         navigator.clipboard.writeText(gradient)
         window.alert("Gradiente copiado com sucesso!")
     }
-       
 }
+
+buttonGenerate.addEventListener("click", generateGradient)
+buttonCopy.addEventListener("click", copyCode)
